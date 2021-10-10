@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: lighter;
+}
+.connexionBox {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 25%;
+}
+
+.connexion {
+	font-size: 24px;
+  background-color: #409B81;
+  color: white;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
+  border-radius: 10px;
+  padding: 4%;
+}
+
+.connexion > * {
+	width: 100%;
+}
+.connexion > h1{
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 6px;
+}
+
+.connexion > p {
+  font-size: 60%;
+}
+
+.connexion > input {
+	box-sizing: border-box;
+	font-size: 24px;
+	padding: 4%;
+	border: none;
+  border-radius: 10px;
+	background-color: #fff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
+  color: #409B81;
+	border-width: 0 0 5px 0;
+	outline: none;
+}
+button {
+	font-size: 20px;
+  font-weight: 700;
+	border: none;
+  border-radius: 10px;
+	color: white;
+	background-color: #8B4500;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
+	margin-top: 10px;
+	padding: 4%;
+	cursor: pointer;
+}
+
+button:disabled {
+	background-color: #eceff1;
+	cursor:not-allowed;
+	color: white;
+}
+.box {
+	display: flex;
+	flex-wrap: wrap;
+	font-family: 'Montserrat', sans-serif;
+	color: #212121;
+	/*border: 5px solid purple;*/
+}
+
+.box > * {
+	/*border: 5px solid red;*/
+	flex: 1 1 100vw;
+}
+
+header {
+	text-align: center;
+	background-color: #F44336;
+	color: white;
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+	margin-bottom: 5px;
+	padding: 10px 20px;
+}
+header h1 {
+	margin: 0;
+	text-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.card {
+	flex: 0 1 500px;
+	min-height: 500px;
+	/*border: 5px solid lightblue;*/
+	margin: 20px 15px;
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+	border-radius: 2px;
+}
+
+.image {
+	width: 100%;
+	height: 150px;
+	overflow: hidden;
+	border-radius: 2px 2px 0 0;
+}
+.image img {
+	width: 100%;
+	transform: translateY(-25%);
+}
+
+.recette {
+	padding: 0 20px;
+}
+.recette .liste-ingredients {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	padding: 5px 20px;
+	background-color: #F5F5F5;
+	transform: scale(1.12);
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+.recette .liste-ingredients li {
+	margin-left: 20px;
+	margin-right: 5px;
+}
+.recette ol {
+	padding: 10px 0px 10px 20px;
+}
+.recette ol li {
+	margin-bottom: 10px;
+}
+
+
+@media all and (max-width:500px) {
+
+	h1 {
+		font-size: 1.3em;
+	}
+	.card {
+		margin: 0px;
+	}
+	header {
+		margin: 0;
+	}
+}
+
+/*
+	FOOTER
+*/
+
+footer {
+	display: flex;
+	justify-content: space-around;
+	background-color: #eceff1;
+	padding: 0 0 10px 0;
+	box-shadow: 0px -3px 5px rgba(0,0,0,0.2);
+	width: 100%;
+}
+
+/* ----------------------------
+	NotFound
+---------------------------- */
+
+.notFound {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+	background: #eceff1;
+}
+
+/* ----------------------------
+	Admin
+---------------------------- */
+
+/*.admin {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	border: 5px solid red;
+}
+
+.admin > * {
+	flex: 0 1 500px;
+	border: 5px solid lightblue;
+	margin: 20px 15px;
+	box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+	border-radius: 2px;
+}*/
+
+.admin-form > * {
+	width: 100%;
+	font-size: 18px;
+	padding: 5px;
+	border: 5px solid #69F0AE;
+	border-width: 1px 1px 5px 1px;
+	outline: none;
+	margin-bottom: 5px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.card > button {
+	width: 100%;
+	background: #69F0AE;
+}
+
+.ajouter-recette > * {
+	border: 5px solid #F44336;
+	border-width: 1px 1px 5px 1px;
+}
+
+/* ----------------------------
+	Login
+---------------------------- */
+
+.login {
+	padding: 5px;
+	text-align: center;
+	max-width: 500px;
+	margin: auto;
+}
+
+.login > * {
+	width: 100%;
+
+	margin: 0 auto 20px auto;
+}
+
+.facebook-button {
+	background-color: #3b5998;
+}
+
+.twitter-button {
+	background-color: #00aced;
+}
